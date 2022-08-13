@@ -1,0 +1,36 @@
+import mongoose from "mongoose";
+
+const friendsSchema = new mongoose.Schema({
+    requestId:{
+        type: String,
+        required: true
+    },
+    userId:{
+        type: String,
+        required: true
+    },
+    user:{
+        type: String,
+        required: true
+    },
+    userName:{
+        type: String,
+        required: true
+    },
+    userDesignation:{
+        type: String,
+        required: true
+    },
+    reuestname:{
+        type: String,
+        required: true
+    },
+    requestdesignation:{
+        type: String,
+        required: true
+    },
+})
+
+const Friends = mongoose.model('Friends', friendsSchema)
+
+export default Friends
